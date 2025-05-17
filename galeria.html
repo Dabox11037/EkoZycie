@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Fotograficzny</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="album">
+      <div id="top_nav">
+        <div class="thumbnail-container">
+          <!-- Dodano atrybut data-index zgodnie z kolejnością -->
+          <img src="https://images.unsplash.com/photo-1624639247641-4ac3e6454480?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 1" class="thumbnail" data-index="1" />
+          <img src="https://www.science.edu/acellus/wp-content/uploads/2017/01/earth-405096_1920.jpg" alt="Zdjęcie 2" class="thumbnail" data-index="2" />
+          <img src="https://images.unsplash.com/photo-1613166093303-e0dfaa9442b4?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 3" class="thumbnail" data-index="3" />
+          <img src="https://plus.unsplash.com/premium_photo-1679728130451-ebba4dc5307d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 4" class="thumbnail" data-index="4" />
+          <img src="https://images.unsplash.com/photo-1622228862437-aa0316bb3b93?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 5" class="thumbnail" data-index="5" />
+          <img src="https://images.unsplash.com/photo-1580120656760-c652daad203c?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 6" class="thumbnail" data-index="6" />
+          <img src="https://images.unsplash.com/photo-1600795848739-5c58472a9552?q=80&w=1963&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 7" class="thumbnail" data-index="7" />
+          <img src="https://images.unsplash.com/photo-1579384989575-7fad7fd009f7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 8" class="thumbnail" data-index="8" />
+          <img src="https://images.unsplash.com/photo-1618477462146-050d2767eac4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc4fHxlY29sb2d5fGVufDB8fDB8fHww" alt="Zdjęcie 9" class="thumbnail" data-index="9" />
+          <img src="https://images.unsplash.com/photo-1617036544881-b5416ccf84fe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zdjęcie 10" class="thumbnail" data-index="10" />
+        </div>
+
+        <!-- Kontener, w którym wyświetli się powiększone zdjęcie z animacją -->
+        <div id="main-image-container">
+          <img id="main-image" src="" alt="Powiększone zdjęcie" />
+        </div>
+        <br /><br />
+        <!-- Przycisk zbierający zdjęcia (przywracający pozycje miniatur) -->
+        <button id="gatherButton">Zbierz zdjęcia</button>
+        <!-- Przycisk powrotu do strony głównej pozostawiony z drugiej wersji -->
+        <button id="go-home-btn" onclick="window.location.href='index.html'">
+          Strona Główna
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
